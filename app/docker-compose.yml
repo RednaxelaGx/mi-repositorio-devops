@@ -1,17 +1,6 @@
 version: '3.8'
-
 services:
-  app:
+  web:
     build: ./app
     ports:
       - "5000:5000"
-    environment:
-      - FLASK_ENV=development
-    volumes:
-      - ./app:/app
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge

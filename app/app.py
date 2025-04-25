@@ -1,8 +1,8 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
     return "¡Hola desde Flask en Docker!"
 
